@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.KorewaNanda.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/mainColor"
+    android:padding="5dp"
+    android:theme="@style/Theme.KorewaNanda.AppWidgetContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Random Kanji"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backColor"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txt_keterangan_4041"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jumlah benar :"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/txt_keterangan_4041"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bagaimana cara membaca kanji"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_kanji_4041"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="画家"
+                android:textColor="@color/white"
+                android:textSize="70sp" />
+
+            <Button
+                android:id="@+id/btn_jawaban_1_4041"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/mainColor"
+                android:text="tsuukas"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_jawaban_2_4041"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/mainColor"
+                android:text="susumerus"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

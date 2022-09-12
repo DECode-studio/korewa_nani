@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="530dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:background="@color/mainColor">
+
+    <TextView
+        android:id="@+id/txt_keterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_below="@id/txt_keterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backColor"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo_kwn"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Info"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kore wa Nanda adalah aplikasi latihan kanji  dengan cara berlatih menggunakan tipe soal pilihan ganda dan juga esai yang bisa digunakan sesuai keinginan.\n\nKumpulan kanji pada aplikasi ini dipilih dari buku Basic Kanji Book Vol. 2. Aplikasi ini juga dilengkapi dengan fitur widget yang semakin memudahkan dalam pemakaian aplikasi.\n\nInfo lebih lanjut silakan hubungi:"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="kurakuraahmad02@gmail.com"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.buildup_skill.korewananda">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_kwn"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KorewaNanda">
+        <receiver android:name=".services.AlarmBroadcastReceiver" >
+        </receiver>
+        <receiver
+            android:name=".widget.Lesson4445BasicWidget"
+            android:exported="true"
+            android:label="44 - 45 Basic Lesson">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/lesson4445_basic_widget_info" />
+        </receiver>
+        <receiver
+            android:name=".widget.Lesson4243BasicWidget"
+            android:exported="true"
+            android:label="42 - 43 Basic Lesson">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/lesson4243_basic_widget_info" />
+        </receiver>
+        <receiver
+            android:name=".widget.Lesson4041BasicWidget"
+            android:exported="true"
+            android:label="40 - 41 Basic Lesson">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/lesson4041_basic_widget_info" />
+        </receiver>
+        <receiver
+            android:name=".widget.Lesson3839BasicWidget"
+            android:exported="true"
+            android:label="38 - 39 Basic Lesson">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/lesson3839_basic_widget_info" />
+        </receiver>
+        <receiver
+            android:name=".widget.Lesson3637BasicWidget"
+            android:exported="true"
+            android:label="36 - 37 Basic Lesson">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/lesson3637_basic_widget_info" />
+        </receiver>
+        <receiver
+            android:name=".widget.PilihanWidget"
+            android:exported="true"
+            android:label="All Basic Lesson">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/pilihan_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".pages.HasilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.JumlahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.IsianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.PilihanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.TypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.StartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

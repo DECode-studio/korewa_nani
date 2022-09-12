@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/backColor"
+    android:padding="50dp"
+    tools:context=".pages.MenuActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_kwn"
+        android:layout_marginBottom="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tingkat Kesulitan"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_all_lesson"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="All Lesson Basic Kanji"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/rb_36_37_lesson"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Lesson 36 - 37 Basic Kanji"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/rb_38_39_lesson"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Lesson 38 - 39 Basic Kanji"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/rb_40_41_lesson"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Lesson 40 - 41 Basic Kanji"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/rb_42_43_lesson"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Lesson 42 - 43 Basic Kanji"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/rb_44_45_lesson"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Lesson 44 - 45 Basic Kanji"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end">
+        <Button
+            android:id="@+id/btn_terapkan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terapkan"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>
